@@ -362,7 +362,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<audio id="bgm" loop>
 				<source src="bgm.mp3" type="audio/mpeg">
 			</audio>
-			<video id="intromovie" poster="images/loading.jpg" autoplay>
+			<video id="intromovie" poster="images/loading.jpg">
 				<source src="images/movie.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -404,7 +404,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					$body.removeClass('is-preload');
 					playMusic();
 				}
-				videoPlayer.addEventListener('ended', startMain, false);
+				setTimeout(startMain, 100);
 			});
 			</script>
 	</body>
